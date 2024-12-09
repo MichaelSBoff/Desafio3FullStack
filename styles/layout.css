@@ -1,0 +1,40 @@
+#app {
+    display: grid;
+    grid-template-columns: 32.8% 67.2%;
+}
+
+aside {
+    
+    background: url(../assets/Background.svg) no-repeat;
+    background-size: contain;
+
+    padding: 3.2rem;
+    height: 100%;
+
+    img {
+        height: 4.8rem;
+    }
+    
+    & h1 {
+        margin: 1.6rem auto 0.4rem;
+        color: #FF598B;
+    }
+
+    & p {
+        color: white;
+    }
+}
+
+main {
+    margin: 8rem 13rem;
+
+}
+
+.line {
+    margin-bottom: 4rem;
+    border: 1px solid red;
+}
+
+fieldset {
+    margin-bottom: 4.8rem
+}
