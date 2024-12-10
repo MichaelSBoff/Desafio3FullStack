@@ -5,7 +5,7 @@
     grid-template-columns: repeat(auto-fill, max(13.4rem));    
 }
 
-.radio-select-wrapper {
+.checkbox-wrapper {
 
     position: relative;
 
@@ -19,8 +19,8 @@
 
     border: 1px solid red;
 
-    & .radio-inner {
-
+    & .radio-inner {    
+        
         
 
         border: 1px solid green;
@@ -28,8 +28,11 @@
         cursor: pointer;
 
         display: flex;
+        gap: .8rem;
 
-        place-content: center;
+        align-items: center;
+        justify-content: center;
+        
         
         height: 4rem;
         width: 13rem;
@@ -40,8 +43,30 @@
     }
 
     & .radio-image {
+
+        position: absolute;
+
+        width: 2.4rem;
+        height: 2.4rem;
         
+        &:has(:checked){
+            border: 2px solid blue;
+        }
     }
+
+    & input {
+        opacity: 100;        
+    }
+
+    &:has(input:checked) {
+        svg path {
+            stroke: aqua;
+        }
+    }
+        
+
+
+    
+
+    
 }
-
-
