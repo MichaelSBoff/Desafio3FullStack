@@ -1,0 +1,47 @@
+.radio-wrapper {
+    display: grid;
+
+    
+    grid-template-columns: repeat(auto-fill, max(13.4rem));    
+}
+
+.radio-select-wrapper {
+
+    position: relative;
+
+    display: flex;
+    gap: .4rem;    
+
+    padding: .4rem;
+    width: 27.2rem;
+
+    
+
+    border: 1px solid red;
+
+    & .radio-inner {
+
+        
+
+        border: 1px solid green;
+        
+        cursor: pointer;
+
+        display: flex;
+
+        place-content: center;
+        
+        height: 4rem;
+        width: 13rem;
+
+        & img {
+            width: 1.6rem;
+        }
+    }
+
+    & .radio-image {
+        
+    }
+}
+
+

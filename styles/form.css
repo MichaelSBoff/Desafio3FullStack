@@ -1,0 +1,18 @@
+@import url(/fields/index.css);
+
+form {
+    margin-top: 5rem;
+    color: var(--color-input-placeholder);
+}
+
+fieldset {
+
+    margin-bottom: 4.8rem;
+    
+    & legend {
+        display: flex;
+        gap: 1.2rem;
+
+        font: var(--text-heading-sm);
+    }
+}

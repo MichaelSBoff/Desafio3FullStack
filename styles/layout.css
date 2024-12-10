@@ -1,15 +1,22 @@
 #app {
     display: grid;
-    grid-template-columns: 32.8% 67.2%;
+
+    justify-content: center;
+
+    grid-template-columns: 31.25% 64.1%;
+    gap: 2rem;    
+
+    background-color: var(--color-bg);
+    padding: 2rem;
 }
 
 aside {
     
-    background: url(../assets/Background.svg) no-repeat;
-    background-size: contain;
+    background: url(../assets/Background.svg) no-repeat center/cover;
 
-    padding: 3.2rem;
-    height: 100%;
+    border-radius: 1.2rem;
+
+    padding: 3.2rem;    
 
     img {
         height: 4.8rem;
@@ -18,23 +25,26 @@ aside {
     & h1 {
         margin: 1.6rem auto 0.4rem;
         color: #FF598B;
+        font: var(--text-logo);
     }
 
     & p {
         color: white;
+        font: var(--text-md);
     }
 }
 
 main {
-    margin: 8rem 13rem;
+    border-radius: 1.2rem;
+
+    padding: 8rem 13rem;
+
+    background-color: var(--color-shape-body);
+    color: var(--color-);
 
 }
 
 .line {
     margin-bottom: 4rem;
     border: 1px solid red;
-}
-
-fieldset {
-    margin-bottom: 4.8rem
 }
