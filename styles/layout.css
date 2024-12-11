@@ -16,7 +16,8 @@ aside {
 
     border-radius: 1.2rem;
 
-    padding: 3.2rem;    
+    padding: 3.2rem;
+    height: 100vh;
 
     img {
         height: 4.8rem;
@@ -40,7 +41,11 @@ main {
     padding: 8rem 13rem;
 
     background-color: var(--color-shape-body);
-    color: var(--color-);
+
+    & h2 {
+        font: var(--text-heading-md);
+        color: var(--text-heading);
+    }
 
 }
 

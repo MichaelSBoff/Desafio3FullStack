@@ -12,12 +12,14 @@
     --color-shape-body: #212427;
     --color-shape-button: #2D3136;
     --color-shape-hover: #383D42;
-    --color-input-base:var(--color-bg)    
+    --color-input-base: #1C1F21;
+    --color-input-stroke: #363B40;
     --color-input-placeholder: #869198;
     --color-brand-light: #59B2FF;
     --color-brand-mid: #3487CF;
     --color-brand-dark: #1D6FB6;
-    --color-danger: #FF5959;    
+    --color-danger: #FF5959;
+    --color-text-heading: #F9F9F9;    
 
     --font: "Open Sans", serif;
     --font-heading: "Baloo 2", serif;
@@ -25,10 +27,9 @@
     --text-md: 1.6rem var(--font);
     --text-sm: 1.4rem var(--font);
     --text-xs: 1.2rem var(--font);
-    --text-heading-md: 2.8rem bold var(--font-heading);
+    --text-heading-md: bold 2.8rem var(--font-heading);
     --text-heading-sm: 1.8rem var(--font-heading);
     --text-logo: 4.0rem "Leckerli One", cursive;
-
 }
 
 .flex {

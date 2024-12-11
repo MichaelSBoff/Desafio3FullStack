@@ -5,23 +5,19 @@
     grid-template-columns: repeat(auto-fill, max(13.4rem));    
 }
 
-.checkbox-wrapper {
+.checkbox-wrapper {     
+
+    padding: .4rem;
+    width: 27.2rem;    
 
     position: relative;
 
-    display: flex;
-    gap: .4rem;    
+    & .checkbox-option {
+        display: flex;
+        gap: .4rem;
+    }
 
-    padding: .4rem;
-    width: 27.2rem;
-
-    
-
-    border: 1px solid red;
-
-    & .radio-inner {    
-        
-        
+    & .radio-inner {            
 
         border: 1px solid green;
         
