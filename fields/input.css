@@ -1,9 +1,6 @@
 & .input-wrapper, & .checkbox-wrapper, & .radio-wrapper, & .textarea-wrapper {
 
-    margin-bottom: 1.6rem;
-    
-    
-   
+    margin-bottom: 1.6rem;  
 
     & label {
         display: block;
@@ -11,7 +8,7 @@
     }
 }
 
-input, textarea {
+input, textarea, .checkbox-option {
 
     /* all:unset; */
 
@@ -19,11 +16,13 @@ input, textarea {
     border-radius: .8rem;
     background-color: var(--color-input-base);
 
-    padding: 1.6rem;
-
     color: var(--color-input-placeholder);
 
     &:hover, &:focus {
-        border: 2px solid var(--color-brand-light);
+        outline: 2px solid var(--color-brand-light);
     }
+}
+
+input, textarea {
+    padding: 1.6rem;
 }

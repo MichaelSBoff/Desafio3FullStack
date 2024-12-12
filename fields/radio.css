@@ -5,60 +5,54 @@
     grid-template-columns: repeat(auto-fill, max(13.4rem));    
 }
 
-.checkbox-wrapper {     
-
-    padding: .4rem;
-    width: 27.2rem;    
+.checkbox-wrapper {
 
     position: relative;
 
-    & .checkbox-option {
+    .checkbox-option {
         display: flex;
         gap: .4rem;
+        padding: .4rem;
     }
 
-    & .radio-inner {            
+    & .radio-inner {
 
-        border: 1px solid green;
-        
         cursor: pointer;
 
-        display: flex;
         gap: .8rem;
 
-        align-items: center;
         justify-content: center;
-        
+        align-items: center;        
         
         height: 4rem;
         width: 13rem;
 
+        & input {
+            opacity: 0;
+        }
+
         & img {
             width: 1.6rem;
         }
-    }
 
-    & .radio-image {
-
-        position: absolute;
-
-        width: 2.4rem;
-        height: 2.4rem;
-        
-        &:has(:checked){
-            border: 2px solid blue;
+        &:has(input:checked) {
+            border-radius: .4rem;
+            background-color: var( --color-shape-button);
         }
-    }
 
-    & input {
-        opacity: 100;        
-    }
+        &:has(input:checked) {
 
-    &:has(input:checked) {
-        svg path {
-            stroke: aqua;
+            svg path {
+                stroke: var(--color-brand-light);    
+            }     
         }
-    }
+    }    
+
+    
+
+    
+
+   
         
 
 

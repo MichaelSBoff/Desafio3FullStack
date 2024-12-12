@@ -36,6 +36,14 @@
     display: flex;
 }
 
+.flex1 {
+    flex: 1;
+}
+
+.gap-16 {
+    gap: 1.6rem;
+}
+
 body {
     color: white;
 }
