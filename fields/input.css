@@ -1,4 +1,4 @@
-& .input-wrapper, & .checkbox-wrapper, & .radio-wrapper, & .textarea-wrapper {
+& .input-wrapper, & .checkbox-wrapper, & .radio-wrapper, & .textarea-wrapper, & .colors {
 
     margin-bottom: 1.6rem;  
 
@@ -8,9 +8,7 @@
     }
 }
 
-input, textarea, .checkbox-option {
-
-    /* all:unset; */
+input, textarea, .checkbox-option, .radio-inner {
 
     border: 1px solid var(--color-input-stroke);
     border-radius: .8rem;
@@ -18,11 +16,44 @@ input, textarea, .checkbox-option {
 
     color: var(--color-input-placeholder);
 
-    &:hover, &:focus {
+    &:hover {
         outline: 2px solid var(--color-brand-light);
     }
 }
 
 input, textarea {
+    width: 100%;
     padding: 1.6rem;
 }
+
+.date-wrapper {
+    width: 100%;
+}
+
+.terms-wrapper {  
+    
+    position: relative;
+    gap: 1.2rem;
+    align-items: center;
+    margin-bottom: 0.8rem;
+
+    & input {
+
+        all: unset;
+
+        width: 100%;
+
+        border-radius: 25%;
+
+        width: 2rem;
+        height: 2rem;
+
+        background-color: var(--color-input-base); 
+        
+        &:focus {
+            background-image: url(../assets/icons/check1.svg);
+        }
+    }
+
+}
+

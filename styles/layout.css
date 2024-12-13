@@ -42,7 +42,10 @@ main {
 
     background-color: var(--color-shape-body);
 
+    justify-content: center;
+
     & h2 {
+        margin-bottom: 5rem;
         font: var(--text-heading-md);
         color: var(--text-heading);
     }

@@ -20,9 +20,9 @@
             <h1>Festivite</h1>
             <p>Crie um convite digital para o seu evento</p>
         </aside>
-        <main>
-            <h2>Crie seu convite</h2>
+        <main class="flex">            
             <form action="">
+                <h2>Crie seu convite</h2>
                 <fieldset class="event-info">
 
                     <legend class="flex"> <img src="assets/icons/calendar.svg" alt=""> Sobre o evento</legend>                    
@@ -33,12 +33,12 @@
                     </div>
     
                     <div class="date-wrapper flex gap-16">
-                        <div class="input-wrapper">
+                        <div class="input-wrapper flex1">
                             <label for="initial">Início</label>
                             <input type="date" name="initial" id="initial">
                         </div>
         
-                        <div class="input-wrapper">
+                        <div class="input-wrapper flex1">
                             <label for="finaly">Fim</label>
                             <input type="date" name="finaly" id="finaly">
                         </div>
@@ -47,7 +47,7 @@
                     <div class="flex gap-16">
                         <div class="checkbox-wrapper">
 
-                            <label for="select-box">Tipo</label>
+                            <label for="checkbox-wrapper">Tipo</label>
     
                             <div class="checkbox-option">
                                 <div class="radio-inner flex">                            
@@ -56,7 +56,7 @@
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5.83325 1.8335C5.61224 1.8335 5.40028 1.92129 5.244 2.07757C5.08772 2.23385 4.99992 2.44582 4.99992 2.66683V14.1668H11.9999V2.66683C11.9999 2.44582 11.9121 2.23385 11.7558 2.07757C11.5996 1.92129 11.3876 1.8335 11.1666 1.8335H5.83325ZM12.9999 5.50016V2.66683C12.9999 2.1806 12.8068 1.71428 12.4629 1.37047C12.1191 1.02665 11.6528 0.833496 11.1666 0.833496H5.83325C5.34702 0.833496 4.88071 1.02665 4.53689 1.37047C4.19307 1.71428 3.99992 2.1806 3.99992 2.66683V7.50016H3.16659C2.68035 7.50016 2.21404 7.69332 1.87022 8.03713C1.52641 8.38095 1.33325 8.84727 1.33325 9.3335V13.3335C1.33325 13.8197 1.52641 14.286 1.87022 14.6299C2.21404 14.9737 2.68035 15.1668 3.16659 15.1668H13.8333C14.3195 15.1668 14.7858 14.9737 15.1296 14.6299C15.4734 14.286 15.6666 13.8197 15.6666 13.3335V7.3335C15.6666 6.84726 15.4734 6.38095 15.1296 6.03713C14.7858 5.69332 14.3195 5.50016 13.8333 5.50016H12.9999ZM12.9999 6.50016V14.1668H13.8333C14.0543 14.1668 14.2662 14.079 14.4225 13.9228C14.5788 13.7665 14.6666 13.5545 14.6666 13.3335V7.3335C14.6666 7.11248 14.5788 6.90052 14.4225 6.74424C14.2662 6.58796 14.0543 6.50016 13.8333 6.50016H12.9999ZM3.99992 8.50016H3.16659C2.94557 8.50016 2.73361 8.58796 2.57733 8.74424C2.42105 8.90052 2.33325 9.11248 2.33325 9.3335V13.3335C2.33325 13.5545 2.42105 13.7665 2.57733 13.9228C2.73361 14.079 2.94557 14.1668 3.16659 14.1668H3.99992V8.50016ZM6.66658 4.00016C6.66658 3.72402 6.89044 3.50016 7.16658 3.50016H9.83325C10.1094 3.50016 10.3333 3.72402 10.3333 4.00016C10.3333 4.2763 10.1094 4.50016 9.83325 4.50016H7.16658C6.89044 4.50016 6.66658 4.2763 6.66658 4.00016ZM6.66658 6.66683C6.66658 6.39069 6.89044 6.16683 7.16658 6.16683H9.83325C10.1094 6.16683 10.3333 6.39069 10.3333 6.66683C10.3333 6.94297 10.1094 7.16683 9.83325 7.16683H7.16658C6.89044 7.16683 6.66658 6.94297 6.66658 6.66683ZM6.66658 9.3335C6.66658 9.05735 6.89044 8.8335 7.16658 8.8335H9.83325C10.1094 8.8335 10.3333 9.05735 10.3333 9.3335C10.3333 9.60964 10.1094 9.8335 9.83325 9.8335H7.16658C6.89044 9.8335 6.66658 9.60964 6.66658 9.3335ZM6.66658 12.0002C6.66658 11.724 6.89044 11.5002 7.16658 11.5002H9.83325C10.1094 11.5002 10.3333 11.724 10.3333 12.0002C10.3333 12.2763 10.1094 12.5002 9.83325 12.5002H7.16658C6.89044 12.5002 6.66658 12.2763 6.66658 12.0002Z" fill="#869198"/>
                                         </svg>
                                     <p>Presencial</p>
-                                    <input type="radio" name="event-type">
+                                    <input type="radio" name="event-type" checked>
                                 </div>
                                 <div class="radio-inner flex">
                                     <div class="radio-image"></div>
@@ -71,7 +71,7 @@
                             
                         </div>
         
-                        <div class="input-wrapper">
+                        <div class="input-wrapper flex1">
                             <label for="location">Local</label>
                             <input type="text" name="location" id="location" placeholder="Link ou endereço">
                         </div>
@@ -87,74 +87,151 @@
     
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="personalization-info">
                     
     
                     <legend class="flex"> <img src="assets/icons/paintbrush-vertical.svg" alt=""> Personalização</legend>
     
-                    <div class="colors"></div>
+                    <div class="colors">
+
+                        <label for="colors">Cor Principal</label>
+
+                        <div class="selectcolor-wrapper flex">  
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color"  src="assets/icons/Circle.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle1.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle2.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle3.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle4.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle5.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle6.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle7.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle8.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle9.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img class="color" src="assets/icons/Circle10.svg" alt="">
+                                <input type="radio" name="color">
+                            </div>                            
+                    </div>
     
                     <div class="radio-wrapper">
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Aniversário</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Infantil</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Formatura</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Casamento</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Chá de bebê</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Chá de Panela</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Carnaval</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Páscoa</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">São João</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Halloween</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Natal</label>
-                            <input type="radio" name="preset">
-                        </div>
-                        <div class="radio-inner">
-                            <div class="radio-image"></div>
-                            <label for="">Outro</label>
-                            <input type="radio" name="preset">
-                        </div>
+
+                        <label for="radio-wrapperr">Tema do evento</label>
+
+                        <div class="selectbox-wrapper">
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image.png" alt="">
+                                <label for="">Aniversário</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-1.png" alt="">
+                                <label for="">Infantil</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-2.png" alt="">
+                                <label for="">Formatura</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-3.png" alt="">                                
+                                <label for="">Casamento</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-4.png" alt="">
+                                <label for="">Chá de bebê</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-5.png" alt="">
+                                <label for="">Chá de Panela</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-6.png" alt="">
+                                <label for="">Carnaval</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-7.png" alt="">
+                                <label for="">Páscoa</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-8.png" alt="">
+                                <label for="">São João</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-9.png" alt="">
+                                <label for="">Halloween</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-10.png" alt="">
+                                <label for="">Natal</label>
+                                <input type="radio" name="preset">
+                            </div>
+                            <div class="radio-inner flex">
+                                <div class="radio-image"></div>
+                                <img src="assets/icons/Image-11.png" alt="">
+                                <label for="">Outro</label>
+                                <input type="radio" name="preset">
+                            </div>
+                        </div>                        
                     </div>
     
                     <div class="select-wrapper">
@@ -171,7 +248,7 @@
     
                 </fieldset>
     
-                <fieldset>
+                <fieldset class="contact-info">
                     <legend class="flex"> <img src="assets/icons/contact.svg" alt=""> Dados para contato</legend>
                     <div class="input-wrapper">
                         <label for="clientName">Nome</label>
@@ -187,20 +264,20 @@
                     </div>
                 </fieldset>               
     
-                <fieldset>
+                <fieldset class="terms-">
                     <div class="line"></div>
-                    <checkboc-wrapper>
+                    <div class="terms-wrapper flex">
                         <input type="checkbox" name="terms" id="terms">
                         <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>                    
-                    </checkboc-wrapper>
-                    <checkboc-wrapper>
+                    </div>
+                    <div class="terms-wrapper flex">
                         <input type="checkbox" name="receive01" id="receive01">
                         <label for="receive01">Aceito receber atualizações e promoções por e-mail</label>                    
-                    </checkboc-wrapper>
-                    <checkboc-wrapper>
+                    </div>
+                    <div class="terms-wrapper flex">
                         <input type="checkbox" name="receive02" id="receive02">
                         <label for="receive02">Aceito receber atualizações e promoções por SMS</label>                    
-                    </checkboc-wrapper>
+                    </div>
                 </fieldset>
     
                 <div class="submit">

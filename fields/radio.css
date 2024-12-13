@@ -1,8 +1,83 @@
-.radio-wrapper {
-    display: grid;
+.radio-inner {
+    &:has(input:checked) {            
+        background-color: var( --color-shape-button);
+    }
+
+    input {
+        cursor: pointer;
+        opacity: 0;   
+
+        position: absolute;
+    }
+}
+
+.selectbox-wrapper , .selectcolor-wrapper {
+    & .radio-inner{
+        &:has(:checked) {
+            outline: 2px solid var(--color-brand-light);
+        }
+    }
+    
+}
+
+.selectcolor-wrapper{ 
+    
+    gap: 1.2rem;
+    margin-bottom: 2.8rem;
+
+    & .color {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    
+    & .radio-inner {
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    & input {              
+        width: 4rem;
+        height: 4rem;      
+    }
 
     
-    grid-template-columns: repeat(auto-fill, max(13.4rem));    
+}
+
+.selectbox-wrapper{
+    display: grid;    
+    grid-template-columns: repeat(4, 13.4rem);
+
+    gap: .8rem;      
+
+    .radio-inner {
+        position: relative;        
+
+        border-radius: .4rem;
+        
+        height: 10.3rem;
+
+        flex-direction: column;
+        align-items: center; 
+
+        img {
+            height: 6.4rem;
+            margin: .4rem auto .8rem;
+        }        
+
+        & input {            
+            top: 0;    
+            width: 13.4rem;
+            height: 10.3rem;        
+        }
+
+        
+    }
+
+    
 }
 
 .checkbox-wrapper {
@@ -26,18 +101,15 @@
         
         height: 4rem;
         width: 13rem;
+        border-radius: .4rem;
 
-        & input {
-            opacity: 0;
-        }
+        & input {                     
+            width: 13rem;
+            height: 4rem;
+        }        
 
         & img {
             width: 1.6rem;
-        }
-
-        &:has(input:checked) {
-            border-radius: .4rem;
-            background-color: var( --color-shape-button);
         }
 
         &:has(input:checked) {
