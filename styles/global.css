@@ -48,6 +48,7 @@
     gap: 1.6rem;
 }
 
-body {
-    color: white;
+#app {
+    color: #FFFFFF;
+    scrollbar-width: none;
 }

@@ -1,6 +1,6 @@
-& .input-wrapper, & .checkbox-wrapper, & .radio-wrapper, & .textarea-wrapper, & .colors {
+& .input-wrapper, & .checkbox-wrapper, & .radio-wrapper, & .textarea-wrapper, & .colors, & .style {
 
-    margin-bottom: 1.6rem;  
+    margin-bottom: 1.6rem;
 
     & label {
         display: block;
@@ -21,13 +21,17 @@ input, textarea, .checkbox-option, .radio-inner {
     }
 }
 
-input, textarea {
-    width: 100%;
-    padding: 1.6rem;
+& .input-wrapper {
+    & input {
+        width: 100%;
+        padding: 1.6rem;
+    }
 }
 
-.date-wrapper {
+textarea {
     width: 100%;
+    padding: 1.6rem;
+    height: 13.6rem;
 }
 
 .terms-wrapper {  
@@ -39,9 +43,7 @@ input, textarea {
 
     & input {
 
-        all: unset;
-
-        width: 100%;
+        all: unset;        
 
         border-radius: 25%;
 
@@ -56,4 +58,3 @@ input, textarea {
     }
 
 }
-

@@ -66,9 +66,7 @@
                                     <p>Online</p>
                                     <input type="radio" name="event-type">
                                 </div>
-                            </div>
-    
-                            
+                            </div>                           
                         </div>
         
                         <div class="input-wrapper flex1">
@@ -233,18 +231,46 @@
                             </div>
                         </div>                        
                     </div>
-    
-                    <div class="select-wrapper">
-                        <select name="style" id="Style">
-                            <option value="">Escuro</option>
-                            <option value="">Claro</option>
-                        </select>
+
+                    <div class="flex gap-16">
+                        
+                        <div class="style">                         
+                            <label for="style">Estilo</label>
+                            <div class="select-roll-wrapper flex">
+                                <div class="roll-box flex">
+                                    <div class="radio-inner">
+                                        <div class="radio-image"></div>
+                                        <input type="radio" name="roll-option">
+                                    </div>
+                                </div>
+
+                                <p>Escuro</p>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="droparea">
+                            <label for="dropzone">Foto de Capa</label>
+
+                            <div class="input-wrapper flex">
+
+                                <div class="dropzone flex">
+                                    <img src="assets/icons/arrow.svg" alt="">
+                                    <p>Selecionar</p>
+                                    <input type="file" name="archive" id="archive" value="Nenhum arquivo selecionado" placeholder="Nenhum arquivo selecionado">                         
+                                </div>
+
+                                <p>Nenhum arquivo selecionado</p>
+                                
+                            </div>
+                            
+
+                            
+                                    
+                        </div>
                     </div>
     
-                    <div class="droparea">
-                        <legend>Foto de capa</legend>
-                        <input type="file" name="archive" id="archive">
-                    </div>
+                    
     
                 </fieldset>
     
@@ -280,10 +306,10 @@
                     </div>
                 </fieldset>
     
-                <div class="submit">
-                    <button type="submit">
-                        <img src="" alt="">
-                        Gerar convite
+                <div class="submit flex">
+                    <button type="submit" class="flex">
+                        <img src="assets/icons/ticket.svg" alt="">
+                        <label for="submit">Gerar convite</label>                      
                     </button>
                 </div>
             </form>

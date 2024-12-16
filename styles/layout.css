@@ -4,7 +4,7 @@
     justify-content: center;
 
     grid-template-columns: 31.25% 64.1%;
-    gap: 2rem;    
+    gap: 2rem;
 
     background-color: var(--color-bg);
     padding: 2rem;
