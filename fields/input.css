@@ -16,7 +16,7 @@ input, textarea, .checkbox-option, .radio-inner {
 
     color: var(--color-input-placeholder);
 
-    &:hover {
+    &:hover, &:focus {
         outline: 2px solid var(--color-brand-light);
     }
 }
@@ -50,7 +50,7 @@ input, textarea {
 
         background-color: var(--color-input-base); 
         
-        &:focus {
+        &:checked {
             background-image: url(../assets/icons/check1.svg);
         }
     }
