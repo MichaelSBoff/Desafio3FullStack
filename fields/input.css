@@ -5,7 +5,9 @@
     & label {
         display: block;
         margin-bottom: 1.2rem;
-    }
+        font: var(--text-sm);
+        color: var(--color-text-body);        
+    }    
 }
 
 input, textarea, .checkbox-option, .radio-inner {
@@ -41,6 +43,10 @@ textarea {
     align-items: center;
     margin-bottom: 0.8rem;
 
+    & strong {
+        color: var(--color-brand-light);
+    }
+
     & input {
 
         all: unset;        
@@ -57,4 +63,41 @@ textarea {
         }
     }
 
+}
+
+input[type="date"] {
+    
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }    
+}
+
+input::placeholder, textarea::placeholder, input[type="date"] {
+    font: var(--text-md);
+    color: var(--color-input-placeholder);
+}
+
+input {
+    
+    &:invalid {
+        margin-bottom: .8rem;
+        outline: 1px solid var(--color-danger);
+    }
+
+    &[required] + .error {        
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        font: var(--text-sm);
+        color: var(--color-danger);
+
+        margin-top: 0.4rem;
+    }
+
+    &:not(:focus):valid + .error {
+        display: none;
+    }
+
+    
 }

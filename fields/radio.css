@@ -2,12 +2,18 @@
     &:has(input:checked) {            
         background-color: var( --color-shape-button);
     }
-
-    input {
+    
+    & input {
         cursor: pointer;
         opacity: 0;   
 
         position: absolute;
+    }    
+
+    & p {
+        
+        font: 600 var(--text-sm);
+        color: var(--color-text-heading);
     }
 }
 
@@ -16,8 +22,7 @@
         &:has(:checked) {
             outline: 2px solid var(--color-brand-light);
         }
-    }
-    
+    }    
 }
 
 .selectcolor-wrapper{ 
@@ -50,6 +55,8 @@
 .selectbox-wrapper{
     display: grid;    
     grid-template-columns: repeat(4, 13.4rem);
+
+    margin-bottom: 2.8rem;
 
     gap: .8rem;      
 

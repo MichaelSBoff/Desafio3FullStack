@@ -24,7 +24,6 @@
             <form action="">
                 <h2>Crie seu convite</h2>
                 <fieldset class="event-info">
-
                     <legend class="flex"> <img src="assets/icons/calendar.svg" alt=""> Sobre o evento</legend>                    
     
                     <div class="input-wrapper">
@@ -34,13 +33,13 @@
     
                     <div class="date-wrapper flex gap-16">
                         <div class="input-wrapper flex1">
-                            <label for="initial">Início</label>
-                            <input type="date" name="initial" id="initial">
+                            <label for="start-date">Início</label>
+                            <input type="date" name="start-date" id="start-date" placeholder="DD/MM/AAAA, --:--">
                         </div>
         
                         <div class="input-wrapper flex1">
-                            <label for="finaly">Fim</label>
-                            <input type="date" name="finaly" id="finaly">
+                            <label for="end-date">Fim</label>
+                            <input type="date" name="end-date" id="end-date">
                         </div>
                     </div>
 
@@ -73,20 +72,17 @@
                             <label for="location">Local</label>
                             <input type="text" name="location" id="location" placeholder="Link ou endereço">
                         </div>
-                    </div>
-
-                    
+                    </div>                    
     
                     <div class="textarea-wrapper">
                         <label for="description">Descrição</label>
-                        <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        <textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" cols="20" rows="20"></textarea>
                     </div>
     
     
                 </fieldset>
     
-                <fieldset class="personalization-info">
-                    
+                <fieldset class="personalization-info">                   
     
                     <legend class="flex"> <img src="assets/icons/paintbrush-vertical.svg" alt=""> Personalização</legend>
     
@@ -154,7 +150,7 @@
     
                     <div class="radio-wrapper">
 
-                        <label for="radio-wrapperr">Tema do evento</label>
+                        <label for="radio-wrapper">Tema do evento</label>
 
                         <div class="selectbox-wrapper">
                             <div class="radio-inner flex">
@@ -234,20 +230,13 @@
 
                     <div class="flex gap-16">
                         
-                        <div class="style">                         
+                        <div class="toggle">
                             <label for="style">Estilo</label>
-                            <div class="select-roll-wrapper flex">
-                                <div class="roll-box flex">
-                                    <div class="radio-inner">
-                                        <div class="radio-image"></div>
-                                        <input type="radio" name="roll-option">
-                                    </div>
-                                </div>
-
-                                <p>Escuro</p>
-                                
+                            <div class="style">              
+                                <input type="checkbox" id="dark-mode">
+                                <label for="dark-mode"></label>
                             </div>
-                        </div>
+                        </div>                       
         
                         <div class="droparea">
                             <label for="dropzone">Foto de Capa</label>
@@ -276,9 +265,13 @@
     
                 <fieldset class="contact-info">
                     <legend class="flex"> <img src="assets/icons/contact.svg" alt=""> Dados para contato</legend>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper error">
                         <label for="clientName">Nome</label>
                         <input type="text" name="clientName" id="clientName" required>
+                        <div class="error">
+                            <img src="assets/icons/circle-alert.svg" alt="">
+                            <p>Campo obrigatório</p>
+                        </div>
                     </div>
                     <div class="input-wrapper">
                         <label for="clientEmail">E-mail</label>
